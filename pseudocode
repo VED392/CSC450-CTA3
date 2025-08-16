@@ -1,0 +1,45 @@
+/*
+Pseudocode Code
+
+START PROGRAM
+
+FUNCTION safeInput(REFERENCE input)
+    Read user input to  'input'
+    if input is invalid THEN
+        Clear input error state
+        Discard invalid input
+        RETURN false
+    END IF
+    RETURN true
+END FUNCTION
+
+DECLARE coutn <-- 0
+
+DISPLAY "HOW many integers do you want to enter? the limit is 26
+
+Repeat
+    CALL safeInput (count)
+    UNTIL count is a valid integer and count > 0 and count <= MAX_VALUES
+    
+ALLOCATE dynamic array 'values' of size 'count' using NEW
+
+FOR i FROM 0 to count - 1 DO
+    DISPLAY "ENTER value", (character representation of 'A' + i)
+    REPEAT
+        CALL safeInput (values[i])
+        UNTIL values[i] is a valid
+END FOR 
+
+DISPLAY first value (values[0]) for demonstration
+
+DELETE dynamically allocated array 'values'
+SET values to nullptr
+
+If value is null THEN
+    DISPLAY "Values pointer is null. Memory cleaned up successfully."
+ELSE
+    DISPLAY "values[0]: ", value at index 0 of value array
+    DEALLOCATE the dynamic array using DELETE
+END PROGRAM
+
+*/
